@@ -3,6 +3,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import Container from '../../Components/common';
 import CustomButton from '../../Components/CustomButton/CustomInputs/CustomButton';
 import Input from '../../Components/CustomInputs/input';
+import Icon from 'react-native-vector-icons/AntDesign';
 export default class Login extends Component {
 
   private userInputChange = '';
@@ -32,7 +33,7 @@ export default class Login extends Component {
           onTextChange={this.onTextChangeUsername.bind(this)}
           style={this.styles.container}
           value={this.userInputChange}
-          icon={<Text>Hide</Text>}
+          icon={<Icon name={"eyeo"} size={25}/>}
           iconPosition="Right"
           error='This field is required'
           showError={false}
@@ -48,9 +49,8 @@ export default class Login extends Component {
           error='This field is required'
           showError={false}
         />
-        <CustomButton danger={true} loading={true} title='Submit' disabled={false}/>
-        <CustomButton primary={true} loading={true} title='Submit' disabled/>
-        <CustomButton secondry={true} loading={true} title='Submit' disabled={false}/>
+        <CustomButton primary={true} loading={true} title='Login'disabled={false}/>
+
       </View>
     );
   };

@@ -10,10 +10,12 @@ export default styles=StyleSheet.create({
         marginTop:20,
         height:42,
         justifyContent:"center",
-        borderRadius:5
+        borderRadius:5,
+       borderWidth:0,
+       fontFamily:"Rubik-Italic-VariableFont_wght"
     },
     container:{
-       flex:1
+       flex:1,
     },
     textError:{
         color:"red"
